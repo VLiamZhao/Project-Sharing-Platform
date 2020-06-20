@@ -2,7 +2,7 @@
 ## Description 
 The goal of this product is to help students (junior job seekers) to join a good fit industry project and to accumulate 
 industry experience. Also, in the meantime, a small size company (typically startup company) could find the engineers 
-to complete their project with minimal cost (the cost: mentorship from industry).
+to complete their project with minimal cost (the cost: mentorship from industry). You can visit the website of this project:http://168.61.221.213:3000/
 ## Use Case & Scenario
 1. Users can register on the website
 2. Users can choose to register a student account or a company account
@@ -29,7 +29,7 @@ to complete their project with minimal cost (the cost: mentorship from industry)
 2. MVP: front end, login, students, companies, DB & Storage
 
 ## Database Design
-![Image of signUp](https://github.com/VLiamZhao/Car-Maintenance-Service/blob/master/web/src/main/resources/car-test.png?raw=true)
+![Image of signUp](https://github.com/VLiamZhao/Project-Sharing-Platform/blob/master/src/main/resources/database%20diagram.png?raw=true)
 1. Object: User, Resume, Project, RecommendationLetter, StudentProject, RateStar, UserInfo, Role
 * Project Approach:
 
@@ -47,7 +47,7 @@ to complete their project with minimal cost (the cost: mentorship from industry)
 ## Build Project
 1. Clone the project.
 ```
-git clone https://github.com/VLiamZhao/Car-Maintenance-Service.git
+git clone https://github.com/VLiamZhao/Project-Sharing-Platform.git
 ```
 2. Install Docker if necessary.
 3. Use command window to spin up the PostgreSQL database server using Postgres docker image.
@@ -93,52 +93,7 @@ mvn compile test -Dspring.profiles.active=${unit} -Daws.region=${region} -Ddb_ur
 ```
 mvn clean compile package -DskipTests=true
 ```
-## API guideline and Reference DEMO
-- You need to sign up for authority to get access.<br />
-Make a get request in this address to create a new account.<br />
-     
-```
-GET - http://localhost:8080/auth/registration
-```
-Put the request body.
-```
-{
-	"name": "Test",
-	"email": "test@gmail.com",
-	"password": "123"
-}
 
-``` 
-Then you can get the response like:
-```
-{
-    "Email": "test@gmail.com",
-    "Id": "15",
-    "Name": "Test"
-}
-
-```
-DEMO screen shoot:
-![Image of signUp](https://github.com/VLiamZhao/Car-Maintenance-Service/blob/master/web/src/main/resources/car-test.png?raw=true)
-- You need to login.<br />
-Make a post request in this address.
-```
-POST - http://localhost:8080/auth
-```
-Put the request body.（ You can chose login with username or email)
-```
-{
-    "email": "test@gmail.com",
-    "password": "123"
-}
-``` 
-Then you can get the response like:
-```
-{
-    "token": "eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNSIsInN1YiI6IlRlc3QiLCJpYXQiOjE1OTI2NDM4NzAsImlzcyI6Im9yZy5teW5vZGUiLCJleHAiOjE1OTI3MzAyNzAsImFsbG93ZWRSZXNvdXJjZSI6Ii9jYXIsIC9tYWludGVuYW5jZSIsImFsbG93ZWRSZWFkUmVzb3VyY2VzIjoiL2NhciwgL21haW50ZW5hbmNlIiwiYWxsb3dlZENyZWF0ZVJlc291cmNlcyI6IiIsImFsbG93ZWRVcGRhdGVSZXNvdXJjZXMiOiIiLCJhbGxvd2VkRGVsZXRlUmVzb3VyY2VzIjoiIn0.Ky6EX7h4gz9yw1DdJhIqijFKlyACzJCJvhgcfkhvjYU"    
-}
-```
-This token is need for the future access other api. So you don't need to login to the every API.
 # CI/CD
 
 You should have completed the following stages before you work with DevOps engineer.
