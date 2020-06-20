@@ -123,7 +123,7 @@ Make sure the source code in the github is the latest(runnable) version.
     mvn clean compile flyway:migrate -Ddatabase.url=jdbc:postgresql://${database_url}:5432/${database_name} 
     -Ddatabase.user=${user_name} -Ddatabase.password=${password}
     
-Notice: Cause we are currently run in the container. Thus, the database connection is no longer localhost:5432.
+Notice: We are currently running in the container. Thus, the database connection is no longer localhost:5432.
 You should inspect `postgreSQL` server container to find the IP address. Find the internal IP address of the container by using:
     
     docker inspect ${container_id} | grep "IPAddress"
