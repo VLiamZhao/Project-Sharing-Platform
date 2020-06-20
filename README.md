@@ -16,7 +16,7 @@ to complete their project with minimal cost (the cost: mentorship from industry)
 10. Student users can view the information of all company users
 11. Student users can rate 1 - 5 stars for companies
 ## Architecture Design   
-![Image of signUp](https://github.com/VLiamZhao/Car-Maintenance-Service/blob/master/web/src/main/resources/car-test.png?raw=true)
+![Image of signUp](https://github.com/VLiamZhao/Project-Sharing-Platform/blob/master/src/main/resources/pspdesign.png?raw=true)
 1. scalability: Service can scale up/down on demand (cloud deployment)
 2. latency: 1s
 3. MVP (V0):
