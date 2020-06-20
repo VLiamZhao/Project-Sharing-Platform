@@ -39,8 +39,6 @@ to complete their project with minimal cost (the cost: mentorship from industry)
     4. Configured Spring Security for Authentication.
     5. Created repository, service and did test.
     6. Created Controllers and Restful APIs.
-    7. Used mockito library to test AWS S3 Storage service.
-    8. Integrated third-party application AWS SQS and tested by Mockito.
  
     
 
