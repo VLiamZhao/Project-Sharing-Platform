@@ -15,22 +15,25 @@ to complete their project with minimal cost (the cost: mentorship from industry)
 9. Student users can apply for a project (Limitation: most 3 projects at the same time)
 10. Student users can view the information of all company users
 11. Student users can rate 1 - 5 stars for companies
-
-
+## Architecture Design   
+![Image of signUp](https://github.com/VLiamZhao/Car-Maintenance-Service/blob/master/web/src/main/resources/car-test.png?raw=true)
+1. scalability: Service can scale up/down on demand (cloud deployment)
+2. latency: 1s
+3. MVP (V0):
+4. Tech stacks:
+    1. Front-end: React, Ant-design, Axios, JWT parser, React-Router
+    2. Back-end: Spring Boot, Hibernate, JWT Token stateless authentication, Restful API, Docker, JUnit
+    3. Deployment: Azure Web Service: Blob File Storage, PostgreSQL Database,  Virtual Machine, Nginx
 ## Assumption
-Users are provided personal informations and car maintenance service information based on the authorities.
-2. The information is created before searching.
-3. The relation between user and their authorities is "Many to Many".
-## Approach
-* Project Business Rules:
-1. Object: Car, Maintenance, Customer, Role
-2. Relationships:
-    1. One customer can have many cars.
-    2. One car can have several maintenance services.
-    3. One customer can have multiple roles.
+1. user <10K
+2. MVP: front end, login, students, companies, DB & Storage
+
+## Database Design
+![Image of signUp](https://github.com/VLiamZhao/Car-Maintenance-Service/blob/master/web/src/main/resources/car-test.png?raw=true)
+1. Object: User, Resume, Project, RecommendationLetter, StudentProject, RateStar, UserInfo, Role
 * Project Approach:
 
-    1. Create Car, Maintenance, Customer, Role.
+    1. Create Models.
     2. Used Hibernate to do the database schema migration.
     3. Used JDBC to connect project with Postgres.
     4. Configured Spring Security for Authentication.
