@@ -56,7 +56,7 @@ docker run --name ${PostgresContainerName} -e POSTGRES_USER=${username} -e POSTG
 ```
 4. Create Unit database on PGAdmin for unit testing
 ```
-create database Maintenance_Service;
+create database pspdata;
 ```
 5. Environment properties configuration
 ```
