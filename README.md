@@ -2,7 +2,7 @@
 ## Description 
 The goal of this product is to help students (junior job seekers) to join a good fit industry project and to accumulate 
 industry experience. Also, in the meantime, a small size company (typically startup company) could find the engineers 
-to complete their project with minimal cost (the cost: mentorship from industry). Feel free to visit the website of this project:http://168.61.221.213:3000/
+to complete their project with minimal cost (the cost: mentorship from industry).<br /> Feel free to visit the website of this project:http://168.61.221.213:3000/
 ## Use Case & Scenario
 1. Users can register on the website
 2. Users can choose to register a student account or a company account
